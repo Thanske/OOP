@@ -19,9 +19,9 @@ class BattleResult
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
-    public function wereJediPowersUsed()
+    public function wereJediPowersUsed():bool
     {
         return $this->usedJediPowers;
     }
@@ -29,7 +29,7 @@ class BattleResult
     /**
      * @return Ship|null
      */
-    public function getWinningShip()
+    public function getWinningShip():?Ship
     {
         return $this->winningShip;
     }
@@ -37,7 +37,7 @@ class BattleResult
     /**
      * @return Ship|null
      */
-    public function getLosingShip()
+    public function getLosingShip():?Ship
     {
         return $this->losingShip;
     }
@@ -47,7 +47,7 @@ class BattleResult
      *
      * @return bool
      */
-    public function isThereAWinner()
+    public function isThereAWinner():bool
     {
         return $this->getWinningShip() !== null;
     }
