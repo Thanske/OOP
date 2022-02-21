@@ -95,7 +95,7 @@ class Ship
     /**
      * @param string $name
      */
-    public function setName($name):string
+    public function setName($name)
     {
         $this->name = $name;
     }
@@ -103,7 +103,7 @@ class Ship
     /**
      * @param int $weaponPower
      */
-    public function setWeaponPower($weaponPower):int
+    public function setWeaponPower($weaponPower)
     {
         $this->weaponPower = $weaponPower;
     }
@@ -111,7 +111,7 @@ class Ship
     /**
      * @param int $jediFactor
      */
-    public function setJediFactor($jediFactor):int
+    public function setJediFactor($jediFactor)
     {
         $this->jediFactor = $jediFactor;
     }
@@ -119,7 +119,7 @@ class Ship
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -127,7 +127,7 @@ class Ship
     /**
      * @param int $id
      */
-    public function setId($id): int
+    public function setId($id)
     {
         $this->id = $id;
     }
